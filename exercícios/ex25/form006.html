@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5">
+        </p>
+        <!-- os atributos min e max do range definem a sua forma de pontuar, por padrão vai de 0 a 100, porém pode mudar com o min e max
+        
+        se quiser deixar um valor pré-estabelecido, utilizar o value=""
+        -->
+
+        <p>
+            <label for="ifoto">Foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <!-- Input File e Image são diferentes, o File permite o usuário escolher a foto, já o image não 
+        
+        Quando for usar o input para envio de arquivos, deverá ser utilizado o método post no formulário, isso por que o método get tem uma limitação de envio de 3.000 bytes
+        -->
+    </form>
+</body>
+</html>
