@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Usuário:</label>
+            
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" size="15" placeholder="nome do usuário" autocomplete="username"> 
+            
+            <!-- 
+            Atributo autocomplete serve para ativar ou desligar o auto preenchimento, para funcionar nos campos desejados é necessário indicar o tipo de entrada em cada elemento (se é número, endereço, usuário, senha, etc...)
+
+            Required é um atributo utilizado no input sempre que o campo solicitado for obrigatório
+            
+            Atributo Min e Max Length (comprimento) é utilizado para colocar quantidade máxima e mínima de caracteres aceitas
+
+            Atributo Size mostra a quantidade de letras mostradas no input
+             
+            Atributo Placeholder serve para escrever algo dentro do input, como uma dica que é apagado quando o usuário clica no campo.
+
+            -->
+        </p>
+
+        <p>
+            <label for="ipass">Senha:</label>
+            <input type="password" name="pass" id="ipass" required minlength="5" maxlength="15" size="15" placeholder="Senha do usuário" autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

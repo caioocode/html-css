@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+             <legend>Sexo</legend>
+             <input type="radio" name="sexo" id="imasc" checked> Masculino
+             <input type="radio" name="sexo" id="ifem"> Feminino
+        </fieldset>
+        <!-- No campo de Sexo, o input radio, para marcar apenas uma opção deverá ter o mesmo NAME
+        
+        o atributo CHECKED já deixa a opção selecionada. Em Radio só é possível deixar 1 seleção, enquanto no checkbox, mais de uma.
+        
+        -->
+        <fieldset>
+            <legend>Esportes favorito </legend>
+                <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label>
+                <input type="checkbox" name="esbasq" id="iesbasq"><label for="iesbasq">Basquete</label>
+                <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">Vôlei</label>
+        
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

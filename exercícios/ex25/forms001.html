@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+
+
+<!-- 
+Name = Mais útil para HTML e PHP
+ID = Mais útil para JS
+Todo INPUT precisa ter um NAME (Nome)
+Label = Etiqueta
+
+Métodos de envio de formulários
+
+"Methods=" é o atributo podendo ser get e post
+GET = só pode enviar dados de até 3.000 Bytes // utilizar quando os dados não forem sensíveis (documentos, senhas, etc)
+POST = não aparece os dados na URL
+
+isso não protege os dados, pra isso é necessário a utilização dos protocolos HTTPS
+-->
+
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome"></p>
+        
+        <p><label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome"></p>
+
+                <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
