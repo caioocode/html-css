@@ -10,7 +10,7 @@
 }
 
 html {
-    /* width: 100vw; */
+    /* width: 100vw; tirei pois estava dando rolagem lateral*/
     height: 100vh;
 }
 
